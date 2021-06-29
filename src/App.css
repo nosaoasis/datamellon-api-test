@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,87 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root {
+  --primaryColor: cornflowerblue;
+  --secondaryColor: darkorange;
+  --borderBaseColor: blue;
+  --bcgColor: aquamarine;
+}
+
+h1,
+h3 {
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  font-size: 30px;
+}
+
+.header {
+  /* background-color: yellow; */
+  padding: 5px 0px;
+  border-bottom: 1px solid var(--borderBaseColor);
+  height: 70px;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 82px);
+}
+
+.loadingGif {
+  display: block;
+}
+
+.homeComponent {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.banner {
+  height: calc(100vh - 82px);
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  width: 50rem;
+  height: 15rem;
+  background-color: var(--bcgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 1rem;
+  /* letter-spacing: var(--mainSpacing); */
+  /* color: ; */
+  /* background: var(--primaryColor); */
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  /* transition: var(--mainTransition); */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: transparent;
+  /* color: var(--primaryColor); */
+}
+
+.dataOverview-chart {
+  margin: 0 300px;
+}
+
+.game {
+  margin: 80px 0 0 0;
+  background-color: red;
 }
